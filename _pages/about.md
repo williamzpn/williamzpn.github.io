@@ -1,13 +1,18 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Hi there! Welcome to my website."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am an incoming Ph.D. student (2025) in the Department of Industrial and Systems Engineering at Virginia Tech. I am currently a fourth-year undergraduate student in the Systems Engineering Department at City University of Hong Kong, advised by  [Prof. Liu Cheng](https://www.cityu.edu.hk/stfprofile/ChengLiu.htm). My research focuses on structural health monitoring in civil infrastructure using digital twin technologies.
+
+In the summer of 2024, I conducted research at the Department of Electrical Engineering and Computer Science (EECS) at KTH Royal Institute of Technology, focusing on embodied AI under the supervision of [Prof. Pang Zhibo](https://www.kth.se/profile/zhibo).
+
+My Email: zpnwilliam@gmail.com [CV](../assets/Curriculum_Vitae.pdf).
+
 
 A data-driven personal website
 ======
