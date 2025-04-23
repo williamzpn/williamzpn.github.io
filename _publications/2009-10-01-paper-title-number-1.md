@@ -1,5 +1,5 @@
 ---
-title: [**Literature Review of Digital Twin Technologies for Civil Infrastructure**](https://doi.org/10.1016/j.iintel.2023.100050)
+title: [Literature Review of Digital Twin Technologies for Civil Infrastructure](https://doi.org/10.1016/j.iintel.2023.100050)
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
