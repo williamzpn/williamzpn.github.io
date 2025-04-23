@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi there! Welcome to my website."
+title: "Hi there🙂! Welcome to my website🚀"
 author_profile: true
 redirect_from: 
   - /about/
@@ -14,8 +14,9 @@ In the summer of 2024, I conducted research at the Department of Electrical Engi
 My Email: zpnwilliam@gmail.com [[CV](../assets/CV.pdf)].
 
 
-## Education
-| Degree | Institution | Timeline |
-|--------|-------------|----------|
-| **Ph.D.** | Virginia Tech | Fall 2025 (Expected) |
-| **B.Eng.** | City University of Hong Kong | 2021-2025 |
+**📚 Education**
+- **Ph.D. in Industrial and Systems Engineering**  
+  `Virginia Tech` | *2025 (Expected)*  
+
+- **B.Eng. in Systems Engineering**  
+  `City University of Hong Kong` | *2021-2025*  
