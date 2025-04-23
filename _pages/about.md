@@ -13,3 +13,8 @@ In the summer of 2024, I conducted research at the Department of Electrical Engi
 
 My Email: zpnwilliam@gmail.com [[CV](../assets/CV.pdf)].
 
+---
+title: "Education"
+---
+Ph.D.	Virginia Tech	Incoming 2025 fall
+B.E.	City University of Hong Kong	2021 - 2025
