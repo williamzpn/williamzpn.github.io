@@ -16,7 +16,7 @@ My Email: zpnwilliam@gmail.com [[CV](../assets/CV.pdf)].
 
 **📚 Education**
 - **Ph.D. in Industrial and Systems Engineering**  
-  `Virginia Tech` | *2025 (Expected)*  
+  Virginia Tech | *2025 (Expected)*  
 
 - **B.Eng. in Systems Engineering**  
-  `City University of Hong Kong` | *2021-2025*  
+  City University of Hong Kong | *2021-2025*  
