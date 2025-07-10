@@ -9,23 +9,10 @@
 
 main:
   - title: "Publications"
-    url: /publications/
- 
-
-  #- title: "Education"
-  #  url: /education/    
-    
-  #- title: "Portfolio"
-   # url: /portfolio/
+    url: /publications/ 
         
-  #- title: "Blog Posts"
-   # url: /year-archive/
-    
-  #- title: "CV"
-   # url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
+  - title: "Blog Posts"
+    url: /year-archive/
     
   #- title: "Guide"
    # url: /markdown/
