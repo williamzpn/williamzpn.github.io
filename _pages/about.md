@@ -11,7 +11,7 @@ I am an incoming Ph.D. student (2025) in the Department of Industrial and System
 
 In the summer of 2024, I conducted research at the Department of Electrical Engineering and Computer Science (EECS) at KTH Royal Institute of Technology, focusing on embodied AI under the supervision of [Prof. Pang Zhibo](https://www.kth.se/profile/zhibo).
 
-My Email: zpnwilliam@gmail.com [[CV](../assets/CV.pdf)].
+My Email: zpnwilliam@gmail.com [[CV](../files/CV.pdf)].
 
 
 **📚 Education**
