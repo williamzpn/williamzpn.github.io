@@ -1,11 +1,10 @@
 ---
-permalink: /peiningzhang/
-title: "About me"
+permalink: /
+title: "Peining Zhang"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-  - /Peining%20Zhang/
 ---
 
 I am a Ph.D. student in the Department of Industrial and Systems Engineering at Virginia Tech,advised by [Prof. Kong James](https://www.ise.vt.edu/people/faculty/kong.html). I obtained my undergraduate in the Systems Engineering Department at City University of Hong Kong, advised by  [Prof. Liu Cheng](https://www.cityu.edu.hk/stfprofile/ChengLiu.htm). My research focuses on structural health monitoring in civil infrastructure using digital twin technologies.
