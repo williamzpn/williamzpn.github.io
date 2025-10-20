@@ -5,32 +5,37 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+<h1>📝 Publications</h1>
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
+    <ul>
     {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
+      {% if post.category != category[0] %}{% continue %}{% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <h2>{{ category[1].title }}</h2>
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include publine.html
+         authors=post.authors title=post.title venue=post.venue
+         volume=post.volume issue=post.issue pages=post.pages
+         article_number=post.article_number
+         note=post.note year=post.year badge=post.badge
+         paperurl=post.paperurl %}
     {% endfor %}
+    {% if title_shown %}</ul>{% endif %}
   {% endfor %}
 {% else %}
+  <ul>
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% include publine.html
+       authors=post.authors title=post.title venue=post.venue
+       volume=post.volume issue=post.issue pages=post.pages
+       article_number=post.article_number
+       note=post.note year=post.year badge=post.badge
+       paperurl=post.paperurl %}
   {% endfor %}
+  </ul>
 {% endif %}
-
-
-

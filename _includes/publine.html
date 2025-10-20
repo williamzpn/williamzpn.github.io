@@ -1,0 +1,16 @@
+<li>
+  {{ include.authors }}.
+  {% if include.paperurl %}
+    <em><a href="{{ include.paperurl }}">{{ include.title }}</a></em>,
+  {% else %}
+    <em>{{ include.title }}</em>,
+  {% endif %}
+  <strong>{{ include.venue }}</strong>
+  {% if include.volume %}, {{ include.volume }}{% endif %}
+  {% if include.issue %}({{ include.issue }}){% endif %}
+  {% if include.pages %}: {{ include.pages }}{% endif %}
+  {% if include.article_number %}, Article {{ include.article_number }}{% endif %}
+  , {{ include.year }}.
+  {% if include.note %}<span>{{ include.note }}</span>{% endif %}
+  {% if include.badge %}<span class="badge">{{ include.badge }}</span>{% endif %}
+</li>

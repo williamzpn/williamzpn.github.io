@@ -69,6 +69,8 @@ author:
 publication_category:
   books:
     title: 'Books'
+  journal:
+    title: Journal Papers
   manuscripts:
     title: 'Journal Articles'    
   conferences:
