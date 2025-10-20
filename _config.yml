@@ -23,7 +23,6 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "Google-scholar.jpg"
-  name             : "Peining Zhang"
   pronouns         : #"he/his"  
   location         : "US"
   uri              : # URL
