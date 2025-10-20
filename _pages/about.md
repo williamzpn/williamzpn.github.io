@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi there🙂! Welcome to my website🚀"
+title: "Peining Zhang"
 author_profile: true
 redirect_from: 
   - /about/
