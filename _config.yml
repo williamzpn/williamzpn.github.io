@@ -22,10 +22,10 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "image.png"
+  avatar           : "Google-scholar.jpg"
   name             : "Peining Zhang"
   pronouns         : #"he/his"  
-  location         : "Hong Kong"
+  location         : "US"
   uri              : # URL
   email            : "zpnwilliam@gmail.com" 
 
