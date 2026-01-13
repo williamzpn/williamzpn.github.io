@@ -1,1 +1,6 @@
-2025 fall ISE2214 Lab GTA
+---
+title: 'ISE2214 Lab GTA'
+date: 2025 fall
+
+---
+
