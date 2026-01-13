@@ -1,36 +1,41 @@
 {%- comment -%}
-  Teaching item renderer for a Jekyll collection (e.g., site.teaching)
-  Expected front matter (optional unless noted):
-    - title (recommended)
-    - role (e.g., Instructor / TA)
-    - course (e.g., ISE 5405)  [optional; if not set, title is used]
-    - term (e.g., Fall 2024)   [recommended]
-    - institution (e.g., Virginia Tech)
+  Teaching item renderer for a Jekyll collection: site.teaching
+  Recommended front matter:
+    - title (e.g., "ISE 2214 Lab")
+    - course (e.g., "ISE 2214")  [optional]
+    - role (e.g., "Graduate Teaching Assistant")
+    - term (e.g., "Fall 2025")
+    - institution (e.g., "Virginia Tech")
     - location (optional)
-    - url (optional: external link)
+    - date: YYYY-MM-DD (recommended for grouping/sorting)
+    - external_url (optional external link)
     - slides / syllabus / recording / materials (optional links)
-    - excerpt (optional) or content body for short description
+    - excerpt (optional) or body content as description
 {%- endcomment -%}
 
 {%- assign t = post -%}
-{%- assign display_title = t.course | default: t.title -%}
+
+{%- assign display_title = t.course | default: t.title | default: "Teaching" -%}
+{%- assign subtitle = "" -%}
+{%- if t.course and t.title and t.title != "" -%}
+  {%- assign subtitle = t.title -%}
+{%- endif -%}
 
 <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
   <div class="archive__item-body">
 
-    {%- comment -%} Title + optional external url {%- endcomment -%}
     <h3 class="archive__item-title no_toc" itemprop="headline">
-      {%- if t.url and t.url != "" -%}
-        <a href="{{ t.url }}" rel="nofollow noopener" target="_blank">{{ display_title }}</a>
+      {%- if t.external_url and t.external_url != "" -%}
+        <a href="{{ t.external_url }}" rel="nofollow noopener" target="_blank">{{ display_title }}</a>
       {%- else -%}
-        {{ display_title }}
+        <a href="{{ t.url | relative_url }}">{{ display_title }}</a>
       {%- endif -%}
-      {%- if t.title and t.course -%}
-        <span style="font-weight: normal;"> — {{ t.title }}</span>
+
+      {%- if subtitle != "" -%}
+        <span style="font-weight: normal;"> — {{ subtitle }}</span>
       {%- endif -%}
     </h3>
 
-    {%- comment -%} Meta line: role / term / institution / location {%- endcomment -%}
     <p class="page__meta">
       {%- if t.role -%}<strong>{{ t.role }}</strong>{%- endif -%}
       {%- if t.term -%}{% if t.role %} · {% endif %}{{ t.term }}{%- endif -%}
@@ -38,38 +43,34 @@
       {%- if t.location -%}{% if t.role or t.term or t.institution %} · {% endif %}{{ t.location }}{%- endif -%}
     </p>
 
-    {%- comment -%} Optional links row {%- endcomment -%}
-    {%- assign has_links = false -%}
-    {%- if t.slides or t.syllabus or t.recording or t.materials -%}
-      {%- assign has_links = true -%}
+    {%- assign links = "" -%}
+    {%- if t.slides -%}
+      {%- capture links -%}{{ links }}<a href="{{ t.slides }}" rel="nofollow noopener" target="_blank">Slides</a>{%- endcapture -%}
+    {%- endif -%}
+    {%- if t.syllabus -%}
+      {%- if links != "" -%}{%- capture links -%}{{ links }} · {%- endcapture -%}{%- endif -%}
+      {%- capture links -%}{{ links }}<a href="{{ t.syllabus }}" rel="nofollow noopener" target="_blank">Syllabus</a>{%- endcapture -%}
+    {%- endif -%}
+    {%- if t.recording -%}
+      {%- if links != "" -%}{%- capture links -%}{{ links }} · {%- endcapture -%}{%- endif -%}
+      {%- capture links -%}{{ links }}<a href="{{ t.recording }}" rel="nofollow noopener" target="_blank">Recording</a>{%- endcapture -%}
+    {%- endif -%}
+    {%- if t.materials -%}
+      {%- if links != "" -%}{%- capture links -%}{{ links }} · {%- endcapture -%}{%- endif -%}
+      {%- capture links -%}{{ links }}<a href="{{ t.materials }}" rel="nofollow noopener" target="_blank">Materials</a>{%- endcapture -%}
     {%- endif -%}
 
-    {%- if has_links -%}
+    {%- if links != "" -%}
       <p class="archive__item-excerpt" style="margin-top:-0.35em;">
-        {%- if t.slides -%}
-          <a href="{{ t.slides }}" rel="nofollow noopener" target="_blank">Slides</a>
-        {%- endif -%}
-        {%- if t.syllabus -%}
-          {%- if t.slides -%} · {%- endif -%}
-          <a href="{{ t.syllabus }}" rel="nofollow noopener" target="_blank">Syllabus</a>
-        {%- endif -%}
-        {%- if t.recording -%}
-          {%- if t.slides or t.syllabus -%} · {%- endif -%}
-          <a href="{{ t.recording }}" rel="nofollow noopener" target="_blank">Recording</a>
-        {%- endif -%}
-        {%- if t.materials -%}
-          {%- if t.slides or t.syllabus or t.recording -%} · {%- endif -%}
-          <a href="{{ t.materials }}" rel="nofollow noopener" target="_blank">Materials</a>
-        {%- endif -%}
+        {{ links }}
       </p>
     {%- endif -%}
 
-    {%- comment -%} Description: excerpt preferred; otherwise content (trim) {%- endcomment -%}
     {%- if t.excerpt and t.excerpt != "" -%}
       <p class="archive__item-excerpt" itemprop="description">
         {{ t.excerpt | markdownify | strip_html | strip_newlines }}
       </p>
-    {%- elsif t.content and t.content != "" -%}
+    {%- else -%}
       {%- assign desc = t.content | markdownify | strip_html | strip_newlines | strip -%}
       {%- if desc != "" -%}
         <p class="archive__item-excerpt" itemprop="description">
