@@ -168,10 +168,10 @@ html[data-theme="dark"] .masthead {
   width: auto;
   max-width: none;
   height: auto;
-  max-height: calc(100vh - 6.5rem);
+  max-height: none;
   margin: 0;
   padding-top: 0 !important;
-  overflow-y: auto;
+  overflow: visible;
 }
 
 #main.home-main > .sidebar .author__urls-wrapper button {
