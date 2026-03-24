@@ -4,7 +4,6 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav class="site-nav-bar" aria-label="Primary">
-        <a class="site-nav-bar__brand" href="{{ base_path }}/">{{ site.title }}</a>
         <ul class="site-nav-bar__links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
