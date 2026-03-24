@@ -1,0 +1,51 @@
+about:
+  paragraphs:
+    - "I am a Ph.D. student in the Department of Industrial and Systems Engineering at Virginia Tech, advised by Prof. James Kong. My work centers on structural health monitoring for civil infrastructure, with a focus on digital twins, intelligent sensing systems, and data-driven decision-making."
+    - "Before joining Virginia Tech, I received my B.Eng. in Systems Engineering from City University of Hong Kong, where I worked with Prof. Cheng Liu. In summer 2024, I also conducted research at KTH Royal Institute of Technology under the supervision of Prof. Zhibo Pang, exploring embodied AI for real-world systems."
+  snapshot:
+    - label: "Base"
+      value: "Virginia, USA"
+    - label: "Current Role"
+      value: "Ph.D. Student, Virginia Tech"
+    - label: "Focus"
+      value: "Infrastructure digital twins and intelligent monitoring"
+    - label: "Contact"
+      value: "zpnwilliam@gmail.com"
+
+research_interests:
+  - title: "Structural Health Monitoring"
+    description: "Monitoring and diagnosis methods for civil infrastructure with an emphasis on reliability, condition awareness, and long-term deployment."
+  - title: "Digital Twin Technologies"
+    description: "Integrating sensing, modeling, and system representations to support diagnosis, maintenance, and infrastructure management."
+  - title: "Data-Driven and Physics-Informed Modeling"
+    description: "Combining engineering knowledge with data-centric methods for robust system understanding and decision support."
+  - title: "Embodied AI for Engineering Systems"
+    description: "Exploring AI methods that interact with real-world systems and support adaptive, resilient engineering workflows."
+
+work_experiences:
+  - title: "Ph.D. Student"
+    organization: "Virginia Tech"
+    period: "2025 - Present"
+    description: "Conducting research in industrial and systems engineering on structural health monitoring, digital twins, and intelligent infrastructure systems."
+  - title: "Summer Researcher"
+    organization: "KTH Royal Institute of Technology"
+    period: "Summer 2024"
+    description: "Worked with the Department of Electrical Engineering and Computer Science on embodied AI for real-world systems."
+  - title: "Undergraduate Researcher"
+    organization: "City University of Hong Kong"
+    period: "2021 - 2025"
+    description: "Studied systems engineering and contributed to research related to digital twin technologies for civil infrastructure."
+
+honors_and_awards: []
+
+services: []
+
+educations:
+  - degree: "Ph.D. in Industrial and Systems Engineering"
+    institution: "Virginia Tech"
+    period: "2025 - Present"
+    description: "Research on structural health monitoring, digital twins, and AI-enabled civil infrastructure systems."
+  - degree: "B.Eng. in Systems Engineering"
+    institution: "City University of Hong Kong"
+    period: "2021 - 2025"
+    description: "Undergraduate training in systems engineering with research experience in data-driven and infrastructure-related applications."

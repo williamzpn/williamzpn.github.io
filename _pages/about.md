@@ -1,52 +1,208 @@
 ---
 permalink: /
 title: "Peining Zhang"
-author_profile: true
+layout: home
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a Ph.D. student in the Department of Industrial and Systems Engineering at Virginia Tech, advised by [Prof. James Kong](https://www.ise.vt.edu/people/faculty/kong.html). My research focuses on structural health monitoring for civil infrastructure, with an emphasis on digital twin technologies, intelligent sensing systems, and data-driven decision-making.
+{% assign home = site.data.homepage %}
 
-Before joining Virginia Tech, I received my B.Eng. in Systems Engineering from City University of Hong Kong, where I worked with [Prof. Cheng Liu](https://www.cityu.edu.hk/stfprofile/ChengLiu.htm). In the summer of 2024, I also conducted research at the Department of Electrical Engineering and Computer Science at KTH Royal Institute of Technology under the supervision of [Prof. Zhibo Pang](https://www.kth.se/profile/zhibo), exploring embodied AI for real-world systems.
+<section id="about-me" class="home-hero anchor-target">
+  <div class="home-hero__intro">
+    <p class="home-hero__eyebrow">About Me</p>
+    <h1 class="home-hero__title">{{ site.author.name }}</h1>
+    <p class="home-hero__lead">{{ site.description }}</p>
 
-This site brings together my research, teaching, and academic updates. You can reach me at [zpnwilliam@gmail.com](mailto:zpnwilliam@gmail.com) or view my [CV](/files/CV.pdf).
+    {% for paragraph in home.about.paragraphs %}
+    <p class="home-copy">{{ paragraph }}</p>
+    {% endfor %}
 
-## Research Interests
+    <div class="home-links">
+      <a class="home-button home-button--primary" href="{{ '/files/CV.pdf' | relative_url }}">View CV</a>
+      <a class="home-button" href="mailto:{{ site.author.email }}">Email</a>
+      <a class="home-button" href="{{ site.author.googlescholar }}">Google Scholar</a>
+      <a class="home-button" href="https://github.com/{{ site.author.github }}">GitHub</a>
+    </div>
+  </div>
 
-- Structural health monitoring for civil infrastructure
-- Digital twin technologies for sensing, diagnosis, and maintenance
-- Data-driven and physics-informed modeling
-- Embodied AI and intelligent systems for engineering applications
+  <aside class="home-hero__panel">
+    <p class="home-hero__panel-label">Snapshot</p>
+    <ul class="home-fact-list">
+      {% for item in home.about.snapshot %}
+      <li class="home-fact-list__item">
+        <span class="home-fact-list__label">{{ item.label }}</span>
+        <span class="home-fact-list__value">{{ item.value }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+</section>
 
-## Current Focus
+<section id="research-interests" class="home-section anchor-target">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">Research Interests</p>
+    <h2>Research Interests</h2>
+  </div>
 
-- Building reliable monitoring and decision frameworks for infrastructure systems
-- Connecting sensing data with digital twin representations for condition assessment
-- Exploring how AI methods can support more adaptive and resilient engineering systems
+  <div class="home-card-grid">
+    {% for item in home.research_interests %}
+    <article class="home-card">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
 
-## Highlights
+<section id="news" class="home-section anchor-target">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">News</p>
+    <h2>News</h2>
+  </div>
 
-- **Virginia Tech**: Ph.D. student in Industrial and Systems Engineering, 2025-present
-- **KTH Royal Institute of Technology**: Summer research in EECS on embodied AI, 2024
-- **City University of Hong Kong**: B.Eng. in Systems Engineering, 2021-2025
+  {% if site.posts and site.posts.size > 0 %}
+  <div class="home-stack">
+    {% for post in site.posts limit: 5 %}
+    <article class="home-list-item">
+      <p class="home-list-item__meta">{{ post.date | date: "%B %Y" }}</p>
+      <h3 class="home-list-item__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.content | strip_html | strip_newlines | truncate: 180 }}</p>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="home-empty">Add posts in <code>_posts</code> to populate this section.</p>
+  {% endif %}
+</section>
 
-## Selected Work
+<section id="work-experiences" class="home-section anchor-target">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">Work Experiences</p>
+    <h2>Work Experiences</h2>
+  </div>
 
-- **Literature Review of Digital Twin Technologies for Civil Infrastructure**  
-  Co-authored with Cheng Liu and Xuebing Xu, published in the *Journal of Infrastructure Intelligence and Resilience* (2023). See [Publications](/publications/) for details.
+  <div class="home-timeline">
+    {% for item in home.work_experiences %}
+    <article class="home-timeline__item">
+      <div class="home-timeline__marker"></div>
+      <div class="home-timeline__content">
+        <p class="home-timeline__meta">{{ item.period }}</p>
+        <h3>{{ item.title }}</h3>
+        <p class="home-timeline__org">{{ item.organization }}</p>
+        <p>{{ item.description }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
 
-## Teaching
+<section id="publications" class="home-section anchor-target">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">Publications</p>
+    <h2>Publications</h2>
+  </div>
 
-- **Graduate Teaching Assistant, ISE 2214 Lab**  
-  Virginia Tech, Fall 2025. Supported lab instruction, grading, and office hours. More details are available on the [Teaching](/teaching/) page.
+  {% if site.publications and site.publications.size > 0 %}
+  <div class="home-stack">
+    {% for post in site.publications reversed %}
+    <article class="home-list-item">
+      <p class="home-list-item__meta">{{ post.year }}</p>
+      <h3 class="home-list-item__title">
+        {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">{{ post.title }}</a>
+        {% else %}
+        {{ post.title }}
+        {% endif %}
+      </h3>
+      <p>{{ post.authors }}</p>
+      <p><strong>{{ post.venue }}</strong>{% if post.volume %}, {{ post.volume }}{% endif %}{% if post.issue %}({{ post.issue }}){% endif %}{% if post.article_number %}, Article {{ post.article_number }}{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="home-empty">Add entries in <code>_publications</code> to populate this section.</p>
+  {% endif %}
+</section>
 
-## Quick Links
+<section id="honors-and-awards" class="home-section anchor-target">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">Honors and Awards</p>
+    <h2>Honors and Awards</h2>
+  </div>
 
-- [Publications](/publications/)
-- [Teaching](/teaching/)
-- [News](/News/)
-- [CV](/files/CV.pdf)
-- [Google Scholar](https://scholar.google.com/citations?user=Tv4UYXQAAAAJ&hl=zh-CN)
-- [GitHub](https://github.com/williamzpn)
+  {% if home.honors_and_awards and home.honors_and_awards.size > 0 %}
+  <div class="home-stack">
+    {% for item in home.honors_and_awards %}
+    <article class="home-list-item">
+      <p class="home-list-item__meta">{{ item.period }}</p>
+      <h3 class="home-list-item__title">{{ item.title }}</h3>
+      {% if item.organization %}<p class="home-list-item__org">{{ item.organization }}</p>{% endif %}
+      {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="home-empty">This section is ready. Add awards in <code>_data/homepage.yml</code> when you want them to appear.</p>
+  {% endif %}
+</section>
+
+<section id="services" class="home-section anchor-target">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">Services</p>
+    <h2>Services</h2>
+  </div>
+
+  {% assign teaching_items = site.teaching | sort: "date" | reverse %}
+  {% if home.services.size > 0 or teaching_items.size > 0 %}
+  <div class="home-stack">
+    {% for item in home.services %}
+    <article class="home-list-item">
+      <p class="home-list-item__meta">{{ item.period }}</p>
+      <h3 class="home-list-item__title">{{ item.title }}</h3>
+      <p class="home-list-item__org">{{ item.organization }}</p>
+      <p>{{ item.description }}</p>
+    </article>
+    {% endfor %}
+
+    {% for item in teaching_items %}
+    {% if item.term %}
+    {% assign service_period = item.term %}
+    {% else %}
+    {% assign service_period = item.date | date: "%Y" %}
+    {% endif %}
+    <article class="home-list-item">
+      <p class="home-list-item__meta">{{ service_period }}</p>
+      <h3 class="home-list-item__title">{{ item.role | default: item.title }}</h3>
+      <p class="home-list-item__org">{{ item.title }}{% if item.institution %}, {{ item.institution }}{% endif %}</p>
+      <p>{{ item.content | strip_html | strip_newlines }}</p>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="home-empty">Add service records in <code>_data/homepage.yml</code> to populate this section.</p>
+  {% endif %}
+</section>
+
+<section id="educations" class="home-section anchor-target">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">Educations</p>
+    <h2>Educations</h2>
+  </div>
+
+  <div class="home-timeline">
+    {% for item in home.educations %}
+    <article class="home-timeline__item">
+      <div class="home-timeline__marker"></div>
+      <div class="home-timeline__content">
+        <p class="home-timeline__meta">{{ item.period }}</p>
+        <h3>{{ item.degree }}</h3>
+        <p class="home-timeline__org">{{ item.institution }}</p>
+        <p>{{ item.description }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

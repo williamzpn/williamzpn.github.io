@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main id="main" class="home-shell" role="main">
+  <article class="home-page" itemscope itemtype="https://schema.org/Person">
+    {% if page.title %}<meta itemprop="name" content="{{ page.title | escape_once }}">{% endif %}
+    {{ content }}
+  </article>
+</main>
