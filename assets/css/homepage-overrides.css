@@ -249,8 +249,12 @@ html[data-theme="dark"] .masthead {
 
 .home-hero__title {
   margin: 0;
-  font-size: clamp(2rem, 4.8vw, 3rem);
-  line-height: 1.05;
+  color: var(--home-ink);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.8;
+  letter-spacing: 0;
 }
 
 .home-copy {

@@ -13,7 +13,7 @@ redirect_from:
 <section id="about-me" class="home-hero anchor-target">
   <div class="home-hero__intro">
     <p class="home-hero__eyebrow">About Me</p>
-    <h1 class="home-hero__title">Hi！I am Peining Zhang（William）</h1>
+    <h1 class="home-hero__title">Hi! I am Peining Zhang (William)</h1>
 
     {% for paragraph in home.about.paragraphs %}
     <p class="home-copy">{{ paragraph }}</p>
