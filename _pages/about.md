@@ -2,7 +2,7 @@
 permalink: /
 title: "Peining Zhang"
 layout: home
-author_profile: false
+author_profile: true
 redirect_from:
   - /about/
   - /about.html
@@ -43,7 +43,6 @@ redirect_from:
 
 <section id="research-interests" class="home-section anchor-target">
   <div class="home-section__header">
-    <p class="home-section__eyebrow">Research Interests</p>
     <h2>Research Interests</h2>
   </div>
 
@@ -59,7 +58,6 @@ redirect_from:
 
 <section id="news" class="home-section anchor-target">
   <div class="home-section__header">
-    <p class="home-section__eyebrow">News</p>
     <h2>News</h2>
   </div>
 
@@ -80,7 +78,6 @@ redirect_from:
 
 <section id="work-experiences" class="home-section anchor-target">
   <div class="home-section__header">
-    <p class="home-section__eyebrow">Work Experiences</p>
     <h2>Work Experiences</h2>
   </div>
 
@@ -101,7 +98,6 @@ redirect_from:
 
 <section id="publications" class="home-section anchor-target">
   <div class="home-section__header">
-    <p class="home-section__eyebrow">Publications</p>
     <h2>Publications</h2>
   </div>
 
@@ -129,7 +125,6 @@ redirect_from:
 
 <section id="honors-and-awards" class="home-section anchor-target">
   <div class="home-section__header">
-    <p class="home-section__eyebrow">Honors and Awards</p>
     <h2>Honors and Awards</h2>
   </div>
 
@@ -151,7 +146,6 @@ redirect_from:
 
 <section id="services" class="home-section anchor-target">
   <div class="home-section__header">
-    <p class="home-section__eyebrow">Services</p>
     <h2>Services</h2>
   </div>
 
@@ -188,7 +182,6 @@ redirect_from:
 
 <section id="educations" class="home-section anchor-target">
   <div class="home-section__header">
-    <p class="home-section__eyebrow">Educations</p>
     <h2>Educations</h2>
   </div>
 

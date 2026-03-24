@@ -1,12 +1,15 @@
 ---
 layout: default
+author_profile: true
 ---
 
 {% include base_path %}
 
-<main id="main" class="home-shell" role="main">
+<div id="main" class="home-shell home-main" role="main">
+  {% include sidebar.html %}
+
   <article class="home-page" itemscope itemtype="https://schema.org/Person">
     {% if page.title %}<meta itemprop="name" content="{{ page.title | escape_once }}">{% endif %}
     {{ content }}
   </article>
-</main>
+</div>
