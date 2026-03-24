@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Peining Zhang"
 title_separator          : "-"
 name                     : &name "Peining Zhang"
-description              : &description "Ph.D. student at Virginia Tech working on structural health monitoring, digital twins, and AI for civil infrastructure."
+description              : &description "Peining Zhang"
 url                      : https://williamzpn.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -24,9 +24,9 @@ author:
   # Biographic information
   name             : "Peining Zhang"
   avatar           : "Google-scholar.jpg"
-  bio              : "Ph.D. student at Virginia Tech studying structural health monitoring, digital twins, and intelligent systems for civil infrastructure."
+  bio              : "Ph.D. student at Virginia Tech"
   pronouns         : #"he/his"  
-  location         : "Virginia, USA"
+  location         :
   employer         : "Virginia Tech"
   uri              : # URL
   email            : "zpnwilliam@gmail.com" 

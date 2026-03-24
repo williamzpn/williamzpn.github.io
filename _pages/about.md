@@ -14,7 +14,6 @@ redirect_from:
   <div class="home-hero__intro">
     <p class="home-hero__eyebrow">About Me</p>
     <h1 class="home-hero__title">{{ site.author.name }}</h1>
-    <p class="home-hero__lead">{{ site.description }}</p>
 
     {% for paragraph in home.about.paragraphs %}
     <p class="home-copy">{{ paragraph }}</p>
@@ -24,18 +23,6 @@ redirect_from:
       <a class="home-button home-button--primary" href="{{ '/files/CV.pdf' | relative_url }}">View CV</a>
     </div>
   </div>
-
-  <aside class="home-hero__panel">
-    <p class="home-hero__panel-label">Snapshot</p>
-    <ul class="home-fact-list">
-      {% for item in home.about.snapshot %}
-      <li class="home-fact-list__item">
-        <span class="home-fact-list__label">{{ item.label }}</span>
-        <span class="home-fact-list__value">{{ item.value }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-  </aside>
 </section>
 
 <section id="research-interests" class="home-section anchor-target">
@@ -190,7 +177,9 @@ redirect_from:
         <p class="home-timeline__meta">{{ item.period }}</p>
         <h3>{{ item.degree }}</h3>
         <p class="home-timeline__org">{{ item.institution }}</p>
+        {% if item.description %}
         <p>{{ item.description }}</p>
+        {% endif %}
       </div>
     </article>
     {% endfor %}
