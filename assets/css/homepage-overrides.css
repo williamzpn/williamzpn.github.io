@@ -193,6 +193,10 @@ html[data-theme="dark"] .masthead {
   display: none;
 }
 
+#main.home-main > .sidebar .author__clustrmaps {
+  margin-top: 1rem;
+}
+
 #main.home-main > .sidebar .author__avatar img {
   max-width: 210px;
 }
