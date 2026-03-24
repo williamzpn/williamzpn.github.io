@@ -195,6 +195,17 @@ html[data-theme="dark"] .masthead {
 
 #main.home-main > .sidebar .author__clustrmaps {
   margin-top: 1rem;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#main.home-main > .sidebar .author__clustrmaps iframe,
+#main.home-main > .sidebar .author__clustrmaps canvas,
+#main.home-main > .sidebar .author__clustrmaps > div {
+  transform: scale(0.8);
+  transform-origin: top left;
 }
 
 #main.home-main > .sidebar .author__avatar img {
