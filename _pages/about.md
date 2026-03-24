@@ -45,18 +45,17 @@ redirect_from:
     <h2>News</h2>
   </div>
 
-  {% if site.posts and site.posts.size > 0 %}
+  {% if home.news and home.news.size > 0 %}
   <div class="home-stack">
-    {% for post in site.posts limit: 5 %}
+    {% for item in home.news %}
     <article class="home-list-item">
-      <p class="home-list-item__meta">{{ post.date | date: "%B %Y" }}</p>
-      <h3 class="home-list-item__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>{{ post.content | strip_html | strip_newlines | truncate: 180 }}</p>
+      <p class="home-list-item__meta">{{ item.period }}</p>
+      <p>{{ item.description }}</p>
     </article>
     {% endfor %}
   </div>
   {% else %}
-  <p class="home-empty">Add posts in <code>_posts</code> to populate this section.</p>
+  <p class="home-empty">Add news items in <code>_data/homepage.yml</code> to populate this section.</p>
   {% endif %}
 </section>
 
