@@ -33,7 +33,11 @@ work_experiences:
     period: "2021 - 2025"
     description: "Studied systems engineering and contributed to research related to digital twin technologies for civil infrastructure."
 
-honors_and_awards: []
+honors_and_awards:
+  - period: ""
+    title: "master in touching fish"
+    organization: ""
+    description: ""
 
 services: []
 
