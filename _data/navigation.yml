@@ -9,7 +9,7 @@
 
 main:
   - title: "About Me"
-    url: /#about-me
+    url: /
 
   - title: "Research Interests"
     url: /#research-interests
