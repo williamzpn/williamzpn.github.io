@@ -22,9 +22,6 @@ redirect_from:
 
     <div class="home-links">
       <a class="home-button home-button--primary" href="{{ '/files/CV.pdf' | relative_url }}">View CV</a>
-      <a class="home-button" href="mailto:{{ site.author.email }}">Email</a>
-      <a class="home-button" href="{{ site.author.googlescholar }}">Google Scholar</a>
-      <a class="home-button" href="https://github.com/{{ site.author.github }}">GitHub</a>
     </div>
   </div>
 
