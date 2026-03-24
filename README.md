@@ -1,4 +1,4 @@
-# Peining Zhang Personal Website
+# Personal Website
 
 This repository contains the source code for the personal academic website of Peining Zhang (William).
 
