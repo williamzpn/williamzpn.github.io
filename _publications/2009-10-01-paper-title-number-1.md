@@ -7,6 +7,6 @@ volume: 2
 issue: 3
 article_number: 100050
 category: journal
-paperurl: https://doi-org/10.1016/j.iintel.2023.100050
+paperurl: https://doi.org/10.1016/j.iintel.2023.100050
 ---
 

@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Homepage"
+title                    : "Peining Zhang"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Peining Zhang"
+description              : &description "Ph.D. student at Virginia Tech working on structural health monitoring, digital twins, and AI for civil infrastructure."
 url                      : https://williamzpn.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -22,9 +22,12 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
+  name             : "Peining Zhang"
   avatar           : "Google-scholar.jpg"
+  bio              : "Ph.D. student at Virginia Tech studying structural health monitoring, digital twins, and intelligent systems for civil infrastructure."
   pronouns         : #"he/his"  
-  location         : "US"
+  location         : "Virginia, USA"
+  employer         : "Virginia Tech"
   uri              : # URL
   email            : "zpnwilliam@gmail.com" 
 
