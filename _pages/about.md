@@ -106,27 +106,6 @@ redirect_from:
   {% endif %}
 </section>
 
-<section id="honors-and-awards" class="home-section anchor-target">
-  <div class="home-section__header">
-    <h2>Honors and Awards</h2>
-  </div>
-
-  {% if home.honors_and_awards and home.honors_and_awards.size > 0 %}
-  <div class="home-stack">
-    {% for item in home.honors_and_awards %}
-    <article class="home-list-item">
-      <p class="home-list-item__meta">{{ item.period }}</p>
-      <h3 class="home-list-item__title">{{ item.title }}</h3>
-      {% if item.organization %}<p class="home-list-item__org">{{ item.organization }}</p>{% endif %}
-      {% if item.description %}<p>{{ item.description }}</p>{% endif %}
-    </article>
-    {% endfor %}
-  </div>
-  {% else %}
-  <p class="home-empty">This section is ready. Add awards in <code>_data/homepage.yml</code> when you want them to appear.</p>
-  {% endif %}
-</section>
-
 <section id="services" class="home-section anchor-target">
   <div class="home-section__header">
     <h2>Services</h2>

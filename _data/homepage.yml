@@ -1,14 +1,14 @@
 about:
   paragraphs:
-    - "I am a Ph.D. student in the Department of Industrial and Systems Engineering at <strong>Virginia Tech</strong>, advised by <a href=\"https://www.ise.vt.edu/people/faculty/kong.html\">Prof. James Kong</a>. My research develops machine learning, optimization, and physics-informed modeling methods for engineering systems."
-    - "My current work focuses on additive manufacturing, including Tensorized Fourier Neural Operators for transient 3D temperature-field prediction in laser powder bed fusion and quantum-inspired optimization for scan-path planning."
-    - "Before joining Virginia Tech, I received my B.Eng. in Intelligent Manufacturing from <strong>City University of Hong Kong</strong>, where I worked on digital twin technologies and structural health monitoring. I also conducted visiting research at <strong>KTH Royal Institute of Technology</strong> on robotic EV-battery remanufacturing and embodied AI."
+    - "I am a Ph.D. student in the Department of Industrial and Systems Engineering at <strong>Virginia Tech</strong>, advised by <a href=\"https://www.ise.vt.edu/people/faculty/kong.html\">Prof. James Kong</a>. My research develops optimization, machine learning, and computational methods for engineering systems."
+    - "My current work focuses on quantum-inspired optimization for scan-path planning in additive manufacturing."
+    - "Before joining Virginia Tech, I received my B.Eng. in Intelligent Manufacturing from <strong>City University of Hong Kong</strong>, where I was supervised by <a href=\"https://www.cityu.edu.hk/stfprofile/ChengLiu.htm\">Prof. Cheng Liu</a> and worked on digital twin technologies and structural health monitoring. I also conducted visiting research at <strong>KTH Royal Institute of Technology</strong> under the supervision of <a href=\"https://www.kth.se/profile/zhibo\">Prof. Zhibo Pang</a> on robotic EV-battery remanufacturing and embodied AI."
 
 research_interests:
-  - title: "Machine Learning for Additive Manufacturing"
-    description: "Data-driven and physics-informed models for temperature-field prediction, process understanding, and decision support in laser powder bed fusion."
-  - title: "Optimization and Quantum-Inspired Computing"
-    description: "Optimization methods for scan-path planning and engineering design, including permutation-based and quantum-inspired search strategies."
+  - title: "Quantum-Inspired Optimization"
+    description: "Optimization methods for scan-path planning and engineering design, including permutation-based search, probability-matrix modeling, and complete-route sampling."
+  - title: "Additive Manufacturing"
+    description: "Computational methods for laser powder bed fusion, process planning, and manufacturing decision support."
   - title: "Digital Twins and Structural Health Monitoring"
     description: "Sensing, modeling, and diagnostic methods for civil infrastructure and intelligent engineering systems."
   - title: "Robotics and Embodied AI"
@@ -16,7 +16,7 @@ research_interests:
 
 news:
   - period: "May 2026"
-    description: "I began working as a Research Assistant at Virginia Tech on neural-operator modeling and scan-path optimization for laser powder bed fusion."
+    description: "I began working as a Research Assistant at Virginia Tech on quantum-inspired optimization for scan-path planning in laser powder bed fusion."
   - period: "August 2025"
     description: "I began my Ph.D. in Industrial and Systems Engineering at Virginia Tech and served as a Graduate Teaching Assistant for ISE 2214."
   - period: "June 2025"
@@ -28,10 +28,10 @@ work_experiences:
   - title: "Research Assistant"
     organization: "Virginia Tech"
     period: "May 2026 - Present"
-    description: "Developing Tensorized Fourier Neural Operator models for transient 3D temperature-field prediction in laser powder bed fusion and quantum-inspired optimization methods for scan-path planning."
+    description: "Developing quantum-inspired optimization methods for laser powder bed fusion scan-path planning, including probability-matrix route generation and thermal-evaluation-aware search."
   - title: "Graduate Teaching Assistant"
     organization: "Virginia Tech"
-    period: "August 2025 - December 2025"
+    period: "August 2025 - May 2026"
     description: "Supported ISE 2214 through grading, student assistance, and coordination with the instructor on evaluation and course administration."
   - title: "Visiting Researcher"
     organization: "KTH Royal Institute of Technology"
@@ -41,38 +41,10 @@ work_experiences:
     organization: "City University of Hong Kong"
     period: "March 2023 - December 2023"
     description: "Co-authored a literature review on digital twin technologies for civil infrastructure and developed data-driven structural health monitoring models using simulated bridge-response data."
-  - title: "Summer Intern"
-    organization: "Hebei King Ceramic Electronic Technology Co., Ltd."
-    period: "May 2022 - June 2022"
-    description: "Designed ceramic-substrate drawings and 3D models while gaining hands-on exposure to production, chip packaging, connectivity testing, and C++."
 
-honors_and_awards:
-  - period: "2021 - 2024"
-    title: "Dean's List"
-    organization: "City University of Hong Kong"
-    description: ""
-  - period: "2021 - 2025"
-    title: "CityU Scholarship for Outstanding Students"
-    organization: "City University of Hong Kong"
-    description: ""
-  - period: "2025"
-    title: "Magna Cum Laude"
-    organization: "City University of Hong Kong"
-    description: ""
-  - period: "2023"
-    title: "Special Fund for Non-local Outbound Exchange Students"
-    organization: "Peking University Academic Exchange Programme"
-    description: ""
+honors_and_awards: []
 
-services:
-  - title: "Student Representative"
-    organization: "BEng ITME Programme Committee, City University of Hong Kong"
-    period: "December 2022 - June 2025"
-    description: "Represented student needs in departmental planning and curriculum discussions."
-  - title: "Student Representative"
-    organization: "College Validation and Monitoring Committee, City University of Hong Kong"
-    period: "September 2022 - June 2025"
-    description: "Reviewed undergraduate program proposals through committee meetings and paper circulation."
+services: []
 
 educations:
   - degree: "Ph.D. in Industrial and Systems Engineering"
@@ -83,7 +55,3 @@ educations:
     institution: "City University of Hong Kong"
     period: "September 2021 - June 2025"
     description: "cGPA: 3.88/4.30; relevant coursework: Machine Learning, Automation Technology, Mechanics."
-  - degree: "Academic Exchange Programme"
-    institution: "Peking University"
-    period: "July 2023 - August 2023"
-    description: "Relevant coursework: Machine Learning Algorithms, Project Management."
