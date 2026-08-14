@@ -2,7 +2,7 @@ about:
   paragraphs:
     - "I am a Ph.D. student in the Department of Industrial and Systems Engineering at <strong>Virginia Tech</strong>, advised by <a href=\"https://www.ise.vt.edu/people/faculty/kong.html\">Prof. James Kong</a>. My research develops optimization, machine learning, and computational methods for engineering systems."
     - "My current work focuses on quantum-inspired optimization for scan-path planning in additive manufacturing."
-    - "Before joining Virginia Tech, I received my B.Eng. in Intelligent Manufacturing from <strong>City University of Hong Kong</strong>, where I was supervised by <a href=\"https://www.cityu.edu.hk/stfprofile/ChengLiu.htm\">Prof. Cheng Liu</a> and worked on digital twin technologies and structural health monitoring. I also conducted visiting research at <strong>KTH Royal Institute of Technology</strong> under the supervision of <a href=\"https://www.kth.se/profile/zhibo\">Prof. Zhibo Pang</a> on robotic EV-battery remanufacturing and embodied AI."
+    - "Before joining Virginia Tech, I received my B.Eng. in Intelligent Manufacturing from <strong>City University of Hong Kong</strong>, where I was supervised by <a href=\"https://www.cityu.edu.hk/stfprofile/ChengLiu.htm\">Prof. Cheng Liu</a> and worked on digital twin technologies and structural health monitoring. I also conducted visiting research at <strong>KTH Royal Institute of Technology</strong> under the supervision of <a href=\"https://amr.pku.edu.cn/jzyg/szdw/P/2a0b83b7eedb480293ee6eccdf490ef7.htm\">Prof. Zhibo Pang</a> on robotic EV-battery remanufacturing and embodied AI."
 
 research_interests:
   - title: "Quantum-Inspired Optimization"
@@ -50,8 +50,8 @@ educations:
   - degree: "Ph.D. in Industrial and Systems Engineering"
     institution: "Virginia Polytechnic Institute and State University"
     period: "August 2025 - June 2030 (expected)"
-    description: "Relevant coursework: Optimization for Machine Learning, Probability Theory."
+    description: ""
   - degree: "B.Eng. in Intelligent Manufacturing"
     institution: "City University of Hong Kong"
     period: "September 2021 - June 2025"
-    description: "cGPA: 3.88/4.30; relevant coursework: Machine Learning, Automation Technology, Mechanics."
+    description: ""
